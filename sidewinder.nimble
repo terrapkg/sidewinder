@@ -11,3 +11,5 @@ bin           = @["sidewinder"]
 # Dependencies
 
 requires "nim >= 2.4.0"
+requires "https://github.com/euantorano/dotenv.nim"
+requires "https://github.com/guzba/mummy"

@@ -1,0 +1,78 @@
+{
+  "items": {
+    "dotenv.nim": {
+      "dir": "$deps/dotenv",
+      "url": "https://github.com/euantorano/dotenv.nim",
+      "commit": "a3c6726147276ea1447dee292fd27bb036242b78",
+      "version": ""
+    },
+    "mummy": {
+      "dir": "$deps/mummy",
+      "url": "https://github.com/guzba/mummy",
+      "commit": "77a7563e87a1045e4e407a3a68731e299fa3507e",
+      "version": ""
+    },
+    "zippy": {
+      "dir": "$deps/zippy",
+      "url": "https://github.com/guzba/zippy",
+      "commit": "cd562ba43ae8904a4d1ba55611b8a521ef4a179e",
+      "version": ""
+    },
+    "webby": {
+      "dir": "$deps/webby",
+      "url": "https://github.com/treeform/webby",
+      "commit": "325d6ade0970562bee7d7d53961a2c3287f0c4bc",
+      "version": ""
+    },
+    "crunchy": {
+      "dir": "$deps/crunchy",
+      "url": "https://github.com/guzba/crunchy",
+      "commit": "98eb6526982bb8aae8eec6e8781f4539fa19e049",
+      "version": ""
+    },
+    "nimsimd": {
+      "dir": "$deps/nimsimd",
+      "url": "https://github.com/guzba/nimsimd",
+      "commit": "3f6b2668ffb0867d0bf786a658b817763e611350",
+      "version": ""
+    }
+  },
+  "nimcfg": [
+    "############# begin Atlas config section ##########",
+    "--noNimblePath",
+    "--path:\"deps/crunchy/src\"",
+    "--path:\"deps/dotenv/src\"",
+    "--path:\"deps/mummy/src\"",
+    "--path:\"deps/nimsimd/src\"",
+    "--path:\"deps/webby/src\"",
+    "--path:\"deps/zippy/src\"",
+    "############# end Atlas config section   ##########",
+    ""
+  ],
+  "nimbleFile": {
+    "filename": "sidewinder.nimble",
+    "content": [
+      "# Package",
+      "",
+      "version       = \"0.1.0\"",
+      "author        = \"madonuko\"",
+      "description   = \"Package sync tool for Tuatara\"",
+      "license       = \"AGPL-3.0-or-later\"",
+      "srcDir        = \"src\"",
+      "bin           = @[\"sidewinder\"]",
+      "",
+      "",
+      "# Dependencies",
+      "",
+      "requires \"nim >= 2.4.0\"",
+      "requires \"https://github.com/euantorano/dotenv.nim\"",
+      "requires \"https://github.com/guzba/mummy\"",
+      ""
+    ]
+  },
+  "hostOS": "linux",
+  "hostCPU": "amd64",
+  "nimVersion": "2.4.0",
+  "gccVersion": "16.2.1",
+  "clangVersion": "22.1.8"
+}
